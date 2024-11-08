@@ -2,8 +2,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('background.jpg'); /* 배경 이미지 */
-    background-size: contain; /* 배경 이미지가 화면에 맞게 크기 조정 */
+    background-image: url('background.JPG'); /* 배경 이미지 */
+    background-size: cover; /* 배경 이미지가 화면에 맞게 크기 조정 */
     background-position: center; /* 배경 이미지가 화면 가운데에 오도록 */
     background-repeat: no-repeat; /* 배경 이미지 반복 방지 */
     height: 100vh; /* 화면 높이에 맞추기 */
@@ -12,7 +12,7 @@ body {
 /* 슬라이더 컨테이너 */
 .slider-container {
     position: relative;
-    width: 100vw; /* 화면 너비 100% */
+    width: 100px; /* 화면 너비 100% */
     height: 100vh; /* 화면 높이 100% */
 }
 
