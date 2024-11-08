@@ -1,10 +1,15 @@
-// JavaScript source code
 // script.js
-let draggingSlider = null;  // 현재 드래그 중인 슬라이더
-let offsetY = 0;            // 드래그 시작 시 Y 위치 차이
+let draggingSlider = null; // 현재 드래그 중인 슬라이더
+let offsetY = 0;           // 드래그 시작 시 Y 위치 차이
 
 // 슬라이더를 담고 있는 요소들
 const sliders = document.querySelectorAll('.slider');
+
+// 슬라이더 그룹별 제한 설정
+const sliderGroups = {
+    group1: { minY: 80, maxY: window.innerHeight / 2 - 50 },  // 그룹 1의 Y 위치 제한
+    group2: { minY: window.innerHeight / 2 + 50, maxY: window.innerHeight - 150 }  // 그룹 2의 Y 위치 제한
+};
 
 // 슬라이더 드래그 시작
 sliders.forEach(slider => {
@@ -16,8 +21,11 @@ sliders.forEach(slider => {
         const onMouseMove = (moveEvent) => {
             if (draggingSlider) {
                 let newY = moveEvent.clientY - offsetY;
-                const minY = 80;  // 최소 Y 좌표
-                const maxY = window.innerHeight - 180;  // 최대 Y 좌표
+
+                // 드래그된 슬라이더의 그룹에 맞는 Y 좌표 제한을 적용
+                const group = draggingSlider.classList.contains('group1') ? 'group1' : 'group2';
+                const minY = sliderGroups[group].minY;
+                const maxY = sliderGroups[group].maxY;
 
                 // Y 좌표가 범위를 벗어나지 않도록 제한
                 if (newY < minY) newY = minY;

@@ -3,23 +3,24 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('background.jpg'); /* 배경 이미지 */
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size: contain; /* 배경 이미지가 화면에 맞게 크기 조정 */
+    background-position: center; /* 배경 이미지가 화면 가운데에 오도록 */
+    background-repeat: no-repeat; /* 배경 이미지 반복 방지 */
+    height: 100vh; /* 화면 높이에 맞추기 */
 }
 
+/* 슬라이더 컨테이너 */
 .slider-container {
     position: relative;
-    width: 1200px;
-    height: 780px;
+    width: 100vw; /* 화면 너비 100% */
+    height: 100vh; /* 화면 높이 100% */
 }
 
+/* 슬라이더 기본 스타일 */
 .slider {
     position: absolute;
-    width: 50px;
-    height: 100px;
+    width: 5vw; /* 슬라이더 너비 5% */
+    height: 10vh; /* 슬라이더 높이 10% */
     background-image: url('slider.png'); /* 슬라이더 이미지 */
     background-size: cover;
     cursor: pointer;
@@ -27,52 +28,204 @@ body {
 
 /* 첫 번째 그룹의 슬라이더 (중간 y 위치) */
 #slider1 {
-    left: 100px;
-    top: 350px;
+    left: 1.5vw;
+    top: 39vh;
 }
 
 #slider2 {
-    left: 200px;
-    top: 350px;
+    left: 6vw;
+    top: 39vh;
 }
 
 #slider3 {
-    left: 300px;
-    top: 350px;
+    left: 10.5vw;
+    top: 39vh;
 }
 
 #slider4 {
-    left: 400px;
-    top: 350px;
+    left: 15vw;
+    top: 39vh;
 }
 
 #slider5 {
-    left: 500px;
-    top: 350px;
+    left: 19.75vw;
+    top: 39vh;
 }
 
-/* 두 번째 그룹의 슬라이더 (하단 y 위치) */
 #slider6 {
-    left: 100px;
-    top: 500px;
+    left: 24.5vw;
+    top: 39vh;
 }
 
 #slider7 {
-    left: 200px;
-    top: 500px;
+    left: 29vw;
+    top: 39vh;
 }
 
 #slider8 {
-    left: 300px;
-    top: 500px;
+    left: 33.75vw;
+    top: 39vh;
 }
 
 #slider9 {
-    left: 400px;
-    top: 500px;
+    left: 38.5vw;
+    top: 39vh;
 }
 
 #slider10 {
-    left: 500px;
-    top: 500px;
+    left: 43vw;
+    top: 39vh;
 }
+
+/* 두 번째 그룹의 슬라이더 (하단 y 위치) */
+#slider11 {
+    left: 1.5vw;
+    top: 79vh;
+}
+
+#slider12 {
+    left: 6vw;
+    top: 79vh;
+}
+
+#slider13 {
+    left: 10.5vw;
+    top: 79vh;
+}
+
+#slider14 {
+    left: 15vw;
+    top: 79vh;
+}
+
+#slider15 {
+    left: 19.75vw;
+    top: 79vh;
+}
+
+#slider16 {
+    left: 24.5vw;
+    top: 79vh;
+}
+
+#slider17 {
+    left: 29vw;
+    top: 79vh;
+}
+
+#slider18 {
+    left: 33.75vw;
+    top: 79vh;
+}
+
+#slider19 {
+    left: 38.5vw;
+    top: 79vh;
+}
+
+#slider20 {
+    left: 43vw;
+    top: 79vh;
+}
+
+/* 세 번째 그룹의 슬라이더 (더 아래 y 위치) */
+#slider21 {
+    left: 50.75vw;
+    top: 39vh;
+}
+
+#slider22 {
+    left: 55.25vw;
+    top: 39vh;
+}
+
+#slider23 {
+    left: 59.75vw;
+    top: 39vh;
+}
+
+#slider24 {
+    left: 64.25vw;
+    top: 39vh;
+}
+
+#slider25 {
+    left: 69vw;
+    top: 39vh;
+}
+
+#slider26 {
+    left: 73.75vw;
+    top: 39vh;
+}
+
+#slider27 {
+    left: 78.25vw;
+    top: 39vh;
+}
+
+#slider28 {
+    left: 83vw;
+    top: 39vh;
+}
+
+#slider29 {
+    left: 87.75vw;
+    top: 39vh;
+}
+
+#slider30 {
+    left: 92.25vw;
+    top: 39vh;
+}
+
+/* 네 번째 그룹의 슬라이더 (최하단 y 위치) */
+#slider31 {
+    left: 50.75vw;
+    top: 79vh;
+}
+
+#slider32 {
+    left: 55.25vw;
+    top: 79vh;
+}
+
+#slider33 {
+    left: 59.75vw;
+    top: 79vh;
+}
+
+#slider34 {
+    left: 64.25vw;
+    top: 79vh;
+}
+
+#slider35 {
+    left: 69vw;
+    top: 79vh;
+}
+
+#slider36 {
+    left: 73.75vw;
+    top: 79vh;
+}
+
+#slider37 {
+    left: 78.25vw;
+    top: 79vh;
+}
+
+#slider38 {
+    left: 83vw;
+    top: 79vh;
+}
+
+#slider39 {
+    left: 87.75vw;
+    top: 79vh;
+}
+
+#slider40 {
+    left: 92.25vw;
+    top: 79vh;
+}*
